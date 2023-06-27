@@ -31,3 +31,10 @@ Cypress.Commands.add('login', (username, password) => {
     cy.get('input[type="password"]').type(password)
     cy.get('[type="submit"]').click()
 })
+
+Cypress.Commands.add('setNewEmail', (email) => {
+    cy.get('[type="email"]').clear()
+    cy.get('[type="email"]').type(email)
+    cy.get('[type="submit"]').click()
+    cy.wait(3000)
+})

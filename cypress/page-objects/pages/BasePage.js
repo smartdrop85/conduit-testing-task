@@ -23,7 +23,7 @@ export default class BasePage {
         cy.title().should('equal', 'Sign in — Conduit')
     }
 
-    static checkSettingsPageIsOpen() {
+    static checkSettingsLinkPresent() {
         cy.get('a[href="#/settings"]').contains('Settings')
     }
 

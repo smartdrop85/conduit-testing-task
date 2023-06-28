@@ -15,6 +15,10 @@ export default class BasePage {
         cy.get('a[href="#/login"]').click()
     }
 
+    static checkSigninBtnPresent() {
+        cy.get('a[href="#/login"]').should('be.visible')
+    }
+
     static submitBtnClick() {
         cy.get('[type="submit"]').click()
     }

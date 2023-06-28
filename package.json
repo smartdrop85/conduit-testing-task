@@ -6,7 +6,7 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:ff": "cypress run --browser Firefox",
+    "cy:run:ff": "cypress run --browser firefox",
     "cy:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
     "cy:run:desktop": "cypress run --config viewportWidth=1280,viewportHeight=800"
   },

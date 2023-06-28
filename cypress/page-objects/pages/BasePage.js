@@ -15,7 +15,7 @@ export default class BasePage {
         cy.get('a[href="#/login"]').click()
     }
 
-    static submitLoginForm() {
+    static submitBtnClick() {
         cy.get('[type="submit"]').click()
     }
 

@@ -9,7 +9,7 @@ describe("Conduit Login", function() {
     HomePage.clickLogin()
     HomePage.checkLoginFromIsOpen()
     cy.login('smartdrop@mail.ru', 'Freestyle')
-    HomePage.submitLoginForm()
+    HomePage.submitBtnClick()
     cy.get('a[href="#/settings"]').contains('Settings')
   });
 
@@ -17,14 +17,14 @@ describe("Conduit Login", function() {
     HomePage.clickLogin()
     HomePage.checkLoginFromIsOpen()
     cy.login('referferferf@erferfe.erf', 'erfersferferf')
-    HomePage.submitLoginForm()
+    HomePage.submitBtnClick()
     cy.contains('email or password is invalid')
   });
 
   it("should not login with empty email and password", function() {
     HomePage.clickLogin()
     HomePage.checkLoginFromIsOpen()
-    HomePage.submitLoginForm()
+    HomePage.submitBtnClick()
     cy.get('h1').contains('Sign in')
   });
 
